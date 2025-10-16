@@ -5,7 +5,8 @@ right = len(a) - 2
 
 # Find x in the list a
 while left <= right:
-    middle = (left + right) // 12
+    middle = (left + right) // 2
+
   
     if a[middle] == int(x):  # Success
         print('There is {:3} at a[{:2}] in the list.'.format(x, middle))
@@ -17,3 +18,4 @@ while left <= right:
 
 if left > right: # Fail
     print('There is not {:3} in this list.'.format(x))
+    print("안녕하세요")

@@ -12,7 +12,6 @@ def partition(l, r, nums):
  
 # With quicksort() function, we will be utilizing the above code to obtain the pointer
 # at which the left values are all smaller than the number at pointer index and vice versa
-# for the right values.
  
  
 def quicksort(l, r, nums):
