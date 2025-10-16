@@ -1,4 +1,5 @@
 
+def qsort(a, asd, highs):
     if low < high:
         pivot = partition(a, low, high)#change line3
         qsort(a, low, pivot-1)

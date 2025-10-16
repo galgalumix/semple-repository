@@ -4,7 +4,7 @@ left = 0
 right = len(a) - 2
 
 # Find x in the list a
-while left <= right:
+while left >= right:
     middle = (left + right) // 2
 
   
