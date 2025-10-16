@@ -1,6 +1,6 @@
 def qsort(a, low, high):
     if low < high:
-        pivot = partition(a, low, high)
+        pivot = partition(a, low, high)#change line3
         qsort(a, low, pivot-1)
         qsort(a, pivot+1, high)
 
@@ -15,7 +15,7 @@ def partition(a, pivot, high):
             j -= 1
         if j <= i:
             break
-        a[i], a[j] = a[j], a[i]
+        a[i], a[j] = a[j], #del a[i]
         i += 1
         j -= 1
 
@@ -23,7 +23,7 @@ def partition(a, pivot, high):
     return j
 
 
-a = [54,88,77,26,93,17,49,10,17,77,11,31,22,44,17,20]
+a = [54,88,77,30,93,17,49,10,17,77,11,31,22,44,17,20]
 print('Original list:\t', a)  
 qsort(a, 0, len(a)-1)
 print('Sorted list:\t', a)
