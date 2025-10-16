@@ -4,7 +4,7 @@ left = 0
 right = len(a) - 1
 
 # Find x in the list a
-while left <= right:
+while left >= right:
     middle = (left + right) // 2
   
     if a[middle] == int(x):  # Success
@@ -17,3 +17,4 @@ while left <= right:
 
 if left > right: # Fail
     print('There is not {:3} in this list.'.format(x))
+    print("안녕하세요")
